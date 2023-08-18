@@ -17,7 +17,10 @@
     "use-debounce": "^8.0.4",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://aman7483.github.io/GoogleSearch",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
@@ -43,6 +46,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.8",
+    "gh-pages": "^6.0.0",
     "postcss": "^8.4.16",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.8.2",

@@ -6,7 +6,8 @@ export const Navbar = ({ darkTheme, setDarkTheme }) => {
   return (
     <div className="py-12 pb-5 flex flex-col sm:flex-row sm:justify-between items-center border-b dark:border-gray-700 border-gray-200 bg-gradient-to-br from-blue-500 via-yellow-400 to-blue-300">
       <div className="flex justify-between items-center w-full max-w-6xl mx-auto px-4">
-        <Link to="/">
+        
+        {/* <Link to="/"> */}
           <div className="flex items-center">
             <span role="img" aria-label="Google Icon" className="text-4xl mr-2">
               🔍
@@ -15,8 +16,12 @@ export const Navbar = ({ darkTheme, setDarkTheme }) => {
               Google
             </p>
           </div>
-        </Link>
+        {/* </Link> */}
+
+        <Link to="/">
         <Search className="w-full py-2 px-4 rounded-full shadow-md" />
+        </Link>
+
         <button
           type="button"
           onClick={() => setDarkTheme(!darkTheme)}
